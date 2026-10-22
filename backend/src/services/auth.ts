@@ -574,6 +574,7 @@ export async function verifyChallengeAndIssueToken(
     }
 
     // Record outcome if not already recorded prior to rethrowing
+    
     if (!error.outcomeRecorded) {
       recordAuthChallengeOutcome({
         outcome: "blocked",
